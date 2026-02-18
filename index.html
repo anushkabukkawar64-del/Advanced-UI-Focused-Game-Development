@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Neon Pulse - Reaction Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>⚡ Neon Pulse</h1>
+  <p>Test Your Reaction Speed</p>
+</header>
+
+<main class="game-container">
+  <section class="screen start-screen active">
+    <button id="startBtn" class="primary-btn">Start Game</button>
+  </section>
+
+  <section class="screen game-screen">
+    <div class="stats">
+      <div>Attempt: <span id="attempt">1</span>/5</div>
+      <div>Average: <span id="average">0</span> ms</div>
+    </div>
+
+    <div id="reactionBox" class="reaction-box waiting">
+      <span id="message">Wait for Green...</span>
+    </div>
+
+    <div class="timer-display">
+      <span id="resultTime">0</span> ms
+    </div>
+  </section>
+
+  <section class="screen end-screen">
+    <h2>Game Over</h2>
+    <p>Your Average Reaction Time:</p>
+    <h3><span id="finalAverage">0</span> ms</h3>
+    <button id="restartBtn" class="primary-btn">Play Again</button>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Designed | Reaction Game</p>
+</footer>
+
+<script src="game.js"></script>
+</body>
+</html>
